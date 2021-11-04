@@ -71,27 +71,28 @@ Open the rest API client of your choice (we recommend using Thunder client VScod
 
 When signing in, copy the bearer token from the authorization response headers.
 
-| Name           | Endpoint                   | Method | Header                                                                                          | Body                                                                                                            |
-| -------------- | -------------------------- | ------ | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Sign-up        | `/users`                   | POST   | { "Accept": "application/json", "Content-Type": "application/json" }                            | {"user": {"name": "Mario", "email": "mario@mail.com", "password": "123456", "password_confirmation": "123456"}} |
-| Sign-in        | `/users/sign_in`           | POST   | { "Accept": "application/json", "Content-Type": "application/json" }                            | {"email": "mario@mail.com", "password": "123456"}                                                               |
-| Sign-out       | `/users/sign_out`          | DELETE | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} |                                                                                                                 |
-| Create post    | `/posts`                   | POST   | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} | {"content": "Example post"}                                                                                     |
-| Get Post       | `/posts`                   | GET    | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} |                                                                                                                 |
-| Create Comment | `/posts/:post_id/comments` | POST   | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} | {"content": "Example comment"}                                                                                  |
-| Get comments   | `/posts/:post_id/comments` | GET    | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} |                                                                                                                 |
+| Name           | Endpoint                     | Method | Header                                                                                          | Body                                                                       |
+| -------------- | ---------------------------- | ------ | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Sign-up        | `/signup`                    | POST   | { "Accept": "application/json", "Content-Type": "application/json" }                            | {"user": {"name": "test", "email": "test@mail.com", "password": "123456"}} |
+| Sign-in        | `/login`                     | POST   | { "Accept": "application/json", "Content-Type": "application/json" }                            | {"email": "test@mail.com", "password": "123456"}                           |
+| Sign-out       | `/logout`                    | DELETE | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} |                                                                            |
+| Create post    | `/api/v1/posts`              | POST   | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} | { "post": { "content": "post example" } }                                  |
+| Get Post       | `/api/v1/posts`              | GET    | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} |                                                                            |
+| Create Comment | `/api/v1/posts/:id/comments` | POST   | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} | { "comment": { "content": "comment example" } }                            |
+| Get comments   | `/api/v1/posts/:id/comments` | GET    | { "Accept": "application/json", "Content-Type": "application/json", "Authorization": JWT token} |                                                                            |
 
 ## Authors
 
-👨‍💻  **Eduardo Rodriguez**
+👨‍💻 **Eduardo Rodriguez**
+
 - GitHub: [@EroAuditore](https://github.com/EroAuditore)
 - Twitter: [@EroAuditore](https://twitter.com/EroAuditore)
 - LinkedIn: [EroAuditore](https://www.linkedin.com/in/EroAuditore/)
-  
+
 👨‍💻 **Daniel Samuel**
 
 - Github: [DanSam5k](https://github.com/DanSam5k)
-- Twitter: [@_dan_sam](https://twitter.com/_dan_sam)
+- Twitter: [@\_dan_sam](https://twitter.com/_dan_sam)
 - Linkedin: [dansamuel](https://www.linkedin.com/in/dansamuel/)
 
 ## 🤝 Contributing

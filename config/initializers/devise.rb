@@ -319,6 +319,6 @@ Devise.setup do |config|
     ]
     jwt.expiration_time = 30.days.to_i
     # Use default aud_header
-    #jwt.aud_header = 'JWT_AUD'
+    # jwt.aud_header = 'JWT_AUD'
   end
 end

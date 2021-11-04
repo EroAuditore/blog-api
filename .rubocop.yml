@@ -11,26 +11,26 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 420
+  Max: 120
 Metrics/MethodLength:
   Include:
     - 'app/controllers/*'
     - 'app/models/*'
-  Max: 250
+  Max: 20
 Metrics/AbcSize:
   Include:
     - 'app/controllers/*'
     - 'app/models/*'
   Max: 50
 Metrics/ClassLength:
-  Max: 1250
+  Max: 150
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
-  Max: 160
+  Max: 30
 Metrics/CyclomaticComplexity:
-  Max: 110
+  Max: 10
 Metrics/PerceivedComplexity:
-  Max: 110
+  Max: 10
 
 Style/Documentation:
   Enabled: false

@@ -29,5 +29,11 @@ class Api::V1::CommentsController < ApplicationController
       }, status: :not_acceptable
     end
   end
+
+  private
+
+  def comment_params
+    params.require(:comment).permit(:content)
+  end
     
 end

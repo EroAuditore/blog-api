@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+# ruby '2.7.2'
+ruby '3.0.1'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
@@ -25,28 +27,23 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
-#Authentication and autorization and Serialization
+# Authentication and autorization and Serialization
 gem 'devise'
 gem 'devise-jwt'
 gem 'fast_jsonapi'
-gem "figaro"
-
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
-
-group :development do
-end
-
 
 group :test do
-    gem 'factory_bot_rails'
-    gem 'rspec-rails'
-    gem 'faker'
-    gem 'jsonapi-rspec'
-    #...
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'jsonapi-rspec'
+  gem 'rspec-rails'
+  # ...
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

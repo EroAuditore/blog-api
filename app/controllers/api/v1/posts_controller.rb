@@ -26,4 +26,10 @@ class Api::V1::PostsController < ApplicationController
       }, status: :created
     end
   end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:content)
+  end
 end

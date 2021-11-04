@@ -1,4 +1,4 @@
-# Scaffold for social media app with Ruby on Rails
+# Blog-app API End-Points RoR
 
 In this project, we transformed the original Blog app into an back-end server, providing it with some API endpoints to a to allow it to be used in different ways, rather than just through the site - for example, a mobile app or a CLI application.
 
@@ -28,7 +28,7 @@ To run this project, you only need a computer with internet connection and a bro
 In your terminal, in the folder of your preference, type the following bash command to clone this repository:
 
 ```sh
-
+git clone https://github.com/EroAuditore/blog-api.git
 ```
 
 then
@@ -98,7 +98,7 @@ When signing in, copy the bearer token from the authorization response headers.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to comments and raise any [issue]() for this milestone.
+Feel free to comments and raise any [issue](https://github.com/EroAuditore/blog-api/issues) for this milestone.
 
 ## Show your support
 

@@ -83,6 +83,17 @@ When signing in, copy the bearer token from the authorization response headers.
 
 ## Authors
 
+👨‍💻  **Eduardo Rodriguez**
+- GitHub: [@EroAuditore](https://github.com/EroAuditore)
+- Twitter: [@EroAuditore](https://twitter.com/EroAuditore)
+- LinkedIn: [EroAuditore](https://www.linkedin.com/in/EroAuditore/)
+  
+👨‍💻 **Daniel Samuel**
+
+- Github: [DanSam5k](https://github.com/DanSam5k)
+- Twitter: [@_dan_sam](https://twitter.com/_dan_sam)
+- Linkedin: [dansamuel](https://www.linkedin.com/in/dansamuel/)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!

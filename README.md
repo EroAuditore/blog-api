@@ -90,6 +90,17 @@ Start server with:
 API
 Open the rest API client of your choice (we recommend using Thunder client VScode extension)
 
+## Live version:
+
+you can check the live version: [https://microverse-blog-api.herokuapp.com](https://microverse-blog-api.herokuapp.com)
+
+here is the token you can use to test the API
+
+```
+Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YjU3NGNmZi0wOGQzLTRlMDEtOTQ3Zi05OTk3MWU3N2UxZjciLCJzdWIiOiIyIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjM2MTY0MTM2LCJleHAiOjE2Mzg3NTYxMzZ9.2TmfIcrtB0TZsPHBFf5JR6ru1_h9tviqWiavEsbvyXY
+
+```
+
 ### API endpoints
 
 When signing in, copy the bearer token from the authorization response headers.

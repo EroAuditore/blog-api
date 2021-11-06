@@ -1,7 +1,7 @@
 module Api
   module V1
     class CommentsController < ApplicationController
-      before_action :authenticate_user!
+      # before_action :authenticate_user!
       def index
         @post = Post.find(params[:id]).comments
 

@@ -86,4 +86,4 @@ production:
   <<: *default
   database: blog_api_production
   # username: <%= ENV['prod_psql_uid'] %>
-  # password: <%= ENV['prod_psql_pwd'] %>
+  # password: <%= ENV['prod_psql_pwd'] %>|

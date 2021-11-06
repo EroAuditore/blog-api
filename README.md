@@ -50,6 +50,29 @@ Setup database with:
    rails db:migrate
 ```
 
+Install figaro to set Env variables
+Figaro installation is easy:
+
+```
+$ bundle exec figaro install
+```
+
+This creates a commented config/application.yml file and adds it to your .gitignore. Add your own configuration to this file and you're done!
+
+Given the following configuration file you'll have to add this variables and write your own password and user to connect to DB:
+
+# config/application.yml
+
+> #Dev <br>
+> psql_uid: postgres_user <br>
+> psql_pwd: Mypsqlpassword <br>
+> #prod <br>
+>
+> prod_psql_uid: postgres_user<br>
+> prod_psql_pwd: Mypsqlpassword<br>
+>
+> DEVISE_JWT_SECRET_KEY: 128bb7e76c921aa7d907b1e3f5abc3e8f725f4e4f7c2a0317b0de16f0ab426279d781dfd36ccde8ab53506eeb74e5f808be3754e46b540b94284ecbfead488ac
+
 Optionally, you can add the provided seeds for the database tables with:
 
 ```
